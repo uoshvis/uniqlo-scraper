@@ -1,9 +1,11 @@
 # uniqlo-scraper
 uniqlo scraper
 
-Uses:
+Uses
 
 *Scrapy
+
 *scrapy-splash
+
 *Selenium
 
