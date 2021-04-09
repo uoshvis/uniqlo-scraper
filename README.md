@@ -3,7 +3,7 @@ uniqlo scraper
 
 Uses
 
-*Scrapy
-*scrapy-splash
-*Selenium
+* Scrapy
+* scrapy-splash
+* Selenium
 
