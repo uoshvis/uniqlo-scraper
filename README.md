@@ -1,12 +1,33 @@
 # uniqlo-scraper
-uniqlo scraper
 
 Uses
-
-* Scrapy
+* mongoDB
+* scrapy
 * scrapy-splash
-* Selenium
+* selenium
 
+**MongoDB setup**
+
+Ensure that there is an existing /data/bin folder in your $PWD
+```
+docker pull mongo
+docker run -p 27017:27017 -d --mount type=bind,source=$PWD/data/bin,destination=/data/bin mongo
+```
+You can use MongoDB Compass to view the data in MongoDb.
+
+**Scrapy-Splash setup**
+
+```buildoutcfg
+pip3 install scrapy-splash
+docker pull scrapinghub/splash
+docker run -p 8050:8050 -d scrapinghub/splash
+```
+
+Check out required scrapy-splash configuration: 
+
+https://github.com/scrapy-plugins/scrapy-splash 
+
+**Selenium setup**
 
 To use selenium you need to specify the path where
 your chromedriver is located.
